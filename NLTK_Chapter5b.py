@@ -72,19 +72,6 @@ def exercise1():
              words.append(i)
     print("words:", words[:5])
 
-    # cf = nltk.FreqDist(brown_words)
-    # tag = 'NNS'
-    # for plural in total_list[tag ]:
-    #     singular = lem.lemmatize(plural)
-    #     freq_sing = cf[singular]
-    #     freq_plur = cf[plural]
-    #     if freq_plur > freq_sing:
-    #         words.append(plural)
-    #         # words.sort( key=itemgetter(1), reverse=True)
-    #
-    # print(tag, "5 plural nouns more common:", words[:5])
-    #
-    #
 
     print("Part b")
     tags = [b[1] for (a, b) in nltk.bigrams(brown_tags)]
@@ -201,9 +188,9 @@ def exercise(exNum):
 
 def main():
      exercise(1)
-     exercise(2)
-     exercise(3)
-     exercise(4)
+     # exercise(2)
+     # exercise(3)
+     # exercise(4)
 
 
 if __name__ == "__main__":

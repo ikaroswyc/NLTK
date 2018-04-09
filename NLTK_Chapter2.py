@@ -89,7 +89,6 @@ def exercise18():
 def exercise27():
     polysemy = 0.00
     num = 0.00
-    partsofspeech = ''
 
     english = ['n', 'v', 'a', 'r']
     print("n = noun; v = verb, a = adjective, r = adverb")
@@ -100,7 +99,7 @@ def exercise27():
 
             for lemma in synset.lemma_names():
                 lename.append(lemma)
-            name = set(lename)
+
 
             for n in lename:
                 polysemy += len(wn.synsets(n, e))
@@ -109,8 +108,7 @@ def exercise27():
             average = 0.000
             average = polysemy / num
         print("The average polysemy of {} is {:.3f}".format(e, average))
-        polysemy = 0.00
-        num = 0.00
+
 
 
 
@@ -122,12 +120,12 @@ def exercise(exNum):
 
 
 def main():
-    exercise(2)
-    exercise(5)
-    exercise(9)
-    exercise(11)
-    exercise(13)
-    exercise(18)
+    # exercise(2)
+    # exercise(5)
+    # exercise(9)
+    # exercise(11)
+    # exercise(13)
+    # exercise(18)
     exercise(27)
 
 

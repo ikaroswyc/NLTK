@@ -250,8 +250,8 @@ def exercise(exNum):
 
 
 def main():
-     # exercise(2)
-     exercise(4)
+     exercise(2)
+     # exercise(4)
      # exercise(7)
      # exercise(0)
      # exercise(9)

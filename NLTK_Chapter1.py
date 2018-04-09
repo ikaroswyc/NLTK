@@ -2,7 +2,8 @@ from nltk.book import *
 import numpy
 import matplotlib
 import tkinter
-
+from matplotlib import*
+import nltk
 
 def exercise4():
     print(len(text2))
@@ -11,17 +12,19 @@ def exercise4():
 
 
 def exercise5():
-    print("humor")
+
+    print("The lexical diversity of humor is 0.231, while romance is 0.121. Therefore, humor is more lexically diverse.")
+
 
 
 def exercise6():
-    text2.dispersion_plot(["Elinor", "Marianne", "Edward", "Willoughby"])
-    print("implemented")
+    # text2.dispersion_plot(["Elinor", "Marianne", "Edward", "Willoughby"])
+    print()
 
 
 def exercise7():
+    print("text 5: ")
     text5.collocations()
-    print("Elinor and Marianne show a lot in the book. When Edward shows, Willoughby does not show. Elinor and Marianne might be the couple.")
 
 
 def exercise17():
@@ -59,30 +62,18 @@ def exercise18():
     set(sent8)
 
 
-print("implemented")
+
 
 
 def exercise22():
-    FreqDist([w for w in text5 if len(w) == 4 and w.isalpha()])
-    FreqDist([w for w in text5 if len(w) == 4 and w.isalpha()]).most_common(5)
-
-    fdist['JOIN']
-    fdist.freq('JOIN')
-
-    fdist['PART']
-    fdist.freq('PART')
-
-    fdist['that']
-    fdist.freq('that')
-
-    fdist['what']
-    fdist.freq('what')
-
-    fdist['here']
-    fdist.freq('here')
+    print("part1: ")
+    word = nltk.FreqDist([w for w in text5 if len(w) == 4 and w.isalpha()])
+    print("four-letter word: ",word)
+    most = nltk.FreqDist([w for w in text5 if len(w) == 4 and w.isalpha()]).most_common(5)
+    print("most_common 5: ", most)
 
 
-print("implemented")
+
 
 
 def exercise(exNum):
